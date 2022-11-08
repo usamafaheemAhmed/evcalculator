@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8"/>
+    <meta content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
+          name="viewport"/>
+    <meta content="ie=edge" http-equiv="X-UA-Compatible"/>
+    <title>Commercial EV Project Estimator</title>
+
+    <link crossorigin="anonymous" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+          integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" rel="stylesheet"/>
+
+    <link href="./styling.css" rel="stylesheet"/>
+</head>
+
+<body>
+<div class="container-fluid">
+    <div class="row p-3">
+        <div class="col-md-12 my-3">
+            <h1 class="text-center">
+                <img src="./New_logo.jpeg" alt="logo" class="img-fluid w-50">
+            </h1>
+        </div>
+    </div>
+    <div aria-hidden="true" aria-labelledby="exampleModalLabel" class="modal fade" id="exampleModal"
+                             role="dialog" tabindex="-1">
+                            <div class="modal-dialog modal-dialog-scrollable" role="document">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h5 class="modal-title" id="exampleModalLabel">
+                                            Company Information
+                                        </h5>
+                                        <button aria-label="Close" class="close" data-dismiss="modal" type="button">
+                                            <span aria-hidden="true">&times;</span>
+                                        </button>
+                                    </div>
+                                    <div class="modal-body">
+                                        <form id="companyInfoForm">
+                                            <div class="form-group">
+                                                <label for="textName">Name</label>
+                                                <input aria-describedby="emailHelp" class="form-control" id="textName"
+                                                       placeholder="Enter Name" type="text">
+                                            </div>
+                                            <div class="form-group">
+                                                <label for="textEmail">Email Address</label>
+                                                <input class="form-control" id="textEmail" placeholder="Enter Email Address"
+                                                       type="email">
+                                                <small class="form-text text-muted" id="emailHelp">We'll never share
+                                                    your email with anyone else.</small>
+                                            </div>
+                                            <div class="form-group">
+                                                <label for="textContact">Contact</label>
+                                                <input class="form-control" id="textContact" placeholder="Enter Contact Number"
+                                                       type="text">
+                                            </div>
+                                            <div class="form-group">
+                                                <label for="textIndustry">Industry</label>
+                                                <select class="form-control" id="textIndustry">
+                                                    <option value="Offices" selected>Offices</option>
+                                                    <option value="Hotels">Hotels</option>
+                                                    <option value="Leisure">Leisure</option>
+                                                    <option value="Manufacturing">Manufacturing</option>
+                                                    <option value="Golf Courses">Golf courses</option>
+                                                    <option value="Retail">Retail</option>
+                                                    <option value="Car Park Operator">Car Park Operator</option>
+                                                    <option value="Gyms/Spa">Gyms / Spa</option>
+                                                    <option value="Construction">Construction</option>
+                                                    <option value="Rail">Rail</option>
+                                                    <option value="Restaurant">Restaurant</option>
+                                                    <option value="Other">Other</option>
+                                                </select>
+                                            </div>
+                                            <div class="form-group">
+                                                <label for="noEmployees">Number of Employees</label>
+                                                <input class="form-control" id="noEmployees" placeholder="Enter Number of Employees"
+                                                       type="number">
+                                            </div>
+    
+                                        </form>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button class="btn btn-secondary" data-dismiss="modal" type="button">
+                                            Close
+                                        </button>
+                                        <button class="btn btn-secondary" id="btnSave" type="button">
+                                            Get Result!
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+    <div class="calculator2">
+        <div class="row p-3">
+        
+            <div class="col-md-4 col-lg-4 mb-4 d-flex">
+                <div class="card w-100  p-4 card w-100 -bottom">
+                    <div id="part-1">
+                        <h4 class="bold mb-5">Site Overview</h4>
+    
+    
+                        <div class="row">
+                            <div class="col-md-12 mt-1">
+                                <label for="evChargers2">Number of EV Chargers to be installed</label>
+                                <select class="form-control" id="evChargers2" name="evChargers2">
+                                    <option value="1">1 Charger</option>
+                                    <option value="2">2 Chargers</option>
+                                    <option value="3" selected>3 Chargers</option>
+                                    <option value="4">4 Chargers</option>
+                                    <option value="5">5 Chargers</option>
+                                    <option value="6">6 Chargers</option>
+                                    <option value="7">7 Chargers</option>
+                                    <option value="8">8 Chargers</option>
+                                    <option value="9">9 Chargers</option>
+                                    <option value="10">10 Chargers</option>
+                                    <option value="11">11 Chargers</option>
+                                    <option value="12">12 Chargers</option>
+                                    <option value="13">13 Chargers</option>
+                                    <option value="14">14 Chargers</option>
+                                    <option value="15">15 Chargers</option>
+                                    <option value="16">16 Chargers</option>
+                                    <option value="17">17 Chargers</option>
+                                    <option value="18">18 Chargers</option>
+                                    <option value="19">19 Chargers</option>
+                                    <option value="20">20 Chargers</option>
+    
+                                </select>
+    
+                                <br/>
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="col-md-12 mt-1">
+                                <label for="batterySize">Battery Size</label>
+                                <select class="form-control" id="batterySize" name="batterySize">
+                                    <option value="35">35 kW</option>
+                                    <option value="40" selected>40 kW</option>
+                                    <option value="45">45 kW</option>
+                                    <option value="50">50 kW</option>
+                                    <option value="55">55 kW</option>
+                                    <option value="60">60 kW</option>
+                                    <option value="65">65 kW</option>
+                                    <option value="70">70 kW</option>
+                                    <option value="75">75 kW</option>
+                                    <option value="80">80 kW</option>
+                                    <option value="95">95 kW</option>
+                                    <option value="100">100 kW</option>
+                                </select>
+    
+                                <br/>
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="col-md-12 mt-1">
+                                <label for="noVehicles">Estimated Vehicles to charge per day</label>
+                                <select class="form-control" id="noVehicles" name="noVehicles">
+                                    <option value="1">1</option>
+                                    <option value="2" selected>2</option>
+                                    <option value="3">3</option>
+                                    <option value="4">4</option>
+                                    <option value="5">5</option>
+                                    <option value="6">6</option>
+                                    <option value="7">7</option>
+                                    <option value="8">8</option>
+                                    <option value="9">9</option>
+                                    <option value="10">10</option>
+                                </select>
+    
+                                <br/>
+                            </div>
+                        </div>
+    
+                        <div class="row mb-3">
+                            <div class="col-md-12 mt-1">
+                                <label for="energyCost">What is your Energy Cost per kW/h? (p)</label>
+        
+                                <input class="form-control" id="energyCost" name="energyCost"
+                                       placeholder="Enter Energy Cost" type="number" step="0.1" value="0.28">
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="col-md-12 mt-1">
+                                <label for="chargeCost">Intended Charge Price per kW/h? (p)</label>
+        
+                                <input class="form-control" id="chargeCost" name="chargeCost"
+                                       placeholder="Enter Charge Price" type="number" step="0.1" value="0.5">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 col-lg-4 mb-4 ">
+                <div class="card w-100  card w-100 -top p-4 d-flex">
+                    <div class="row">
+                        
+                        <div class="col-md-12">
+                            <h4 class="bold mb-5">Project Cost</h4>
+                            <label for="projectCost">What is your project cost?</label>
+    
+                            <input class="form-control" id="projectCost" name="projectCost"
+                                   placeholder="Enter Project Cost" type="number">
+                        </div>
+                    </div>
+    
+                    <div class="row mt-1">
+                        
+                        <div class="col-md-12 mt-1 pl-3">
+                            <p style="font-size: 15px; font-weight: bold; text-align: justify; color: #465b39">Don't have a project cost, why not visit our <a href="#" class="btnProjectCalculator">Project Cost Calculator</a></p>
+                        </div>
+                    </div>
+    
+                    <div class="row mt-1">
+                        <div class="col-md-12">
+                            <button class="m-2 btn btn-success btn-lg btn-block modalOpen" id="calc2" type="button">
+                                Get Estimate
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="card w-100  p-4 mt-3">
+                    <div class="row">
+    
+                        <div class="col-md-12">
+                            <h5 class="bold text-center">Visit Our Socials</h5>
+                            <br>
+                            <div class="row">
+                                <div class="col-md-4">
+                                    <h6 class="text-center">
+                                        <a href="https://www.facebook.com/Devitech-106582868863395" target="_blank">
+                                            <img src="./svg/fb.svg" alt="fb" class="img-fluid w-50">
+                                        </a>
+                                    </h6>
+                                </div>
+                                <div class="col-md-4">
+                                    <h6 class="text-center">
+                                        <a href="https://www.instagram.com/devitech.ev/" target="_blank">
+                                            <img src="./svg/insta.svg" alt="fb" class="img-fluid w-50">
+                                        </a>
+                                    </h6>
+                                </div>
+                                <div class="col-md-4">
+                                    <h6 class="text-center">
+                                        <a href="https://www.linkedin.com/company/devitech-part-of-the-darcy-group/" target="_blank">
+                                            <img src="./svg/linkedin.svg" alt="fb" class="img-fluid w-50">
+                                        </a>
+                                    </h6>
+                                </div>
+                            </div>
+    
+                            <br>
+                            <h5 class="text-center">Visit Our Website <a href="https://devitech.co.uk/">devitech!</a></h5>
+                            <br>
+                            <h5 class="bold text-center">Read Our Blogs Here</h5>
+                            <h6 class="text-center">
+                                <a href="https://devitech.co.uk/blog" target="_blank">
+                                    <img src="./svg/blog.svg" alt="fb" class="img-fluid w-25">
+                                </a>
+                            </h6>
+    
+    
+                            <br>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 col-lg-4 mb-4 sticky-top" id="resultsDiv2">
+                <div class="card w-100  p-4 mt-3">
+                    <div class="row">
+    
+                        <div class="col-md-12">
+                            
+                            <h5 class="bold text-center">Revenue Return</h5>
+                            <h1 class="text-center"><img alt="svg" src="./money.svg" class="img-fluid w-25"/></h1>
+                            <!-- <h3 class="big gold text-center" id="estimatedConstructionCost"></h3> -->
+                            <br>
+                            <h5 class="bold text-center">Estimated Return on Investment</h5>
+                            <h3 class="big gold text-center" id="estimatedConstructionCostWithGrant2"></h3>
+                            <br>
+                            <h5 class="text-center">Back Office Management by DeviTech <a href="https://devitech.co.uk/back-office">Check Here!</a></h5>
+                            <br>
+                            <ul style="font-size: 13px">
+                                <li>all costs are estimated.</li>
+                                <li>The average battery size is 40kW but please check models.</li>
+                                <li>All surveys are estimated and subject to survey
+                                </li>
+                                <li>VAT applicable to all costs.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+    
+    
+                
+    
+    
+            </div>
+        </div>
+    </div>
+
+        
+        
+    </div>
+</div>
+
+<script crossorigin="anonymous"
+        integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+        src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+
+<script crossorigin="anonymous"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
+
+<script src="./logic.js"></script>
+</body>
+
+</html>
