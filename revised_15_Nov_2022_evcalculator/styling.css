@@ -1,0 +1,131 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
+body {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 400;
+    color: #000;
+    background-color: #000000;
+}
+
+.bold, label {
+    font-weight: bold;
+}
+
+.card {
+    border-radius: 0px;
+}
+
+.card-top
+{
+    border-radius: 0 0px 0px 0px !important;
+}
+
+.card-bottom
+{
+    border-radius: 0px 0px 0px 0px !important;
+}
+
+.bg-green
+{
+    background-color: #9ECA84;
+    color: #fff;
+    cursor: pointer;
+}
+
+.form-control {
+    box-shadow: none;
+    border-radius: 0px;
+    height: 3rem;
+    border: 1px solid #9ECA84;
+    font-size: 13px;
+}
+
+#modalOpen
+{
+    background-color: #9ECA84;
+    color: #fff;
+    font-weight: bold;
+}
+
+.form-control:focus {
+    box-shadow: 1px 5px 10px #C9C782;
+    border-radius: 0px;
+    height: 3rem;
+    border: 2px solid #9ECA84;
+    font-size: 13px;
+}
+
+.btn-group > .btn:not(:last-child):not(.dropdown-toggle), .btn-group > .btn:last-child:not(.dropdown-toggle) {
+    border-radius: 0px;
+    border: 1px solid #000;
+    cursor: pointer;
+    box-shadow: none;
+
+
+}
+.btn-success{
+    background-color: #9ECA84 !important;
+    color: #fff;
+    font-weight: bold;
+    border: 1px solid #9ECA84;
+    border-radius: 0px;
+}
+
+.desc {
+    font-weight: 300;
+    font-size: 14px;
+}
+
+.headline {
+    font-weight: 700;
+    font-size: 20px;
+}
+
+.card.constructionOption:hover {
+    cursor: pointer;
+    border: 1px solid #9ECA84;
+    box-shadow: 1px 5px 10px #ccc;
+}
+
+
+.gold {
+    color: #9ECA84;
+}
+
+.irs--round .irs-bar {
+    background-color: #9ECA84;
+}
+
+.irs--round .irs-from, .irs--round .irs-to, .irs--round .irs-single, .irs--round .irs-min, .irs--round .irs-max {
+    background-color: #9ECA84;
+    color: white;
+    font-family: 'Raleway', sans-serif;
+}
+
+.irs--round .irs-from:before, .irs--round .irs-to:before, .irs--round .irs-single:before {
+    border-top-color: #9ECA84;
+}
+
+.irs--round .irs-handle {
+    top: 26px;
+    width: 24px;
+    height: 24px;
+    border: 4px solid #9ECA84;
+    background-color: white;
+    border-radius: 0;
+    box-shadow: 0 1px 3px rgb(0 0 255 / 30%);
+}
+
+.active {
+    background-color: #9ECA84;
+    color: white;
+    border-radius: 0;
+}
+
+.big {
+    font-weight: bold;
+}
+.buttons .btn{
+    border-radius: 0;
+    width: 30%;
+    height: 3rem;
+}

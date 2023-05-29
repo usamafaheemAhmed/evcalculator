@@ -1,0 +1,122 @@
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport"
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title></title>
+
+  <style>
+
+
+    iframe {
+      min-width: 100%;
+      min-height: 655px;
+    }
+    /*    media queries for mobile and ipad*/
+    @media screen and (max-width: 768px) {
+      iframe {
+        min-width: 100%;
+        min-height: 844px;
+      }
+    }
+
+  </style>
+</head>
+<body>
+
+<iframe src="https://fahadtechsolution.com/fiverr-work/ev-calculator-devitech/v6/index.html" style="border:none;"
+        id="iframe2"></iframe>
+
+
+<script type="application/javascript"
+        src="https://cdnjs.cloudflare.com/ajax/libs/iframe-resizer/4.3.2/iframeResizer.min.js"
+        integrity="sha512-dnvR4Aebv5bAtJxDunq3eE8puKAJrY9GBJYl9GC6lTOEC76s1dbDfJFcL9GyzpaDW4vlI/UjR8sKbc1j6Ynx6w=="
+        crossOrigin="anonymous" referrerpolicy="no-referrer"></script>
+
+<script>
+  var options = {
+
+// Disable if using size method with custom dimensions.
+    autoResize: true,
+
+// Override the body background style in the iFrame.
+    bodyBackground: null,
+
+// Override the default body margin style in the iFrame.
+// A string can be any valid value for the CSS margin attribute,
+// for example '8px 3em'. A number value is converted into px.
+    bodyMargin: null,
+    bodyMarginV1: 8,
+    bodyPadding: null,
+
+// When set to true, only allow incoming messages from the domain
+// listed in the src property of the iFrame tag. If your iFrame
+// navigates between different domains, ports or protocols;
+// then you will need to disable this option.
+    checkOrigin: false,
+
+// If enabled, a window.parentIFrame object is created in the iFrame
+// that contains methods outlined
+    enablePublicMethods: false,
+
+// 'bodyOffset' | 'body<a href="https://www.jqueryscript.net/tags.php?/Scroll/">Scroll</a>' | 'documentElementOffset' | 'documentElementScroll' |
+// 'max' | 'min' | 'grow' | 'lowestElement'
+    heightCalculationMethod: 'offset',
+
+// The default value is equal to two frame refreshes at 60Hz
+    interval: 32,
+
+// Setting the log option to true will make the scripts in both the host page
+// and the iFrame output everything they do to the JavaScript console
+// so you can see the communication between the two scripts.
+    log: true,
+
+// Set maximum height/width of iFrame.
+    maxHeight: Infinity,
+    maxWidth: Infinity,
+
+// Set minimum height/width of iFrame.
+    minHeight: 0,
+    minWidth: 0,
+
+// Enable scroll bars in iFrame.
+    scrolling: false,
+
+// Resize iFrame to content height.
+    sizeHeight: true,
+
+// Resize iFrame to content width.
+    sizeWidth: true,
+
+// Set the number of pixels the iFrame content size has to change by,
+// before triggering resize of the iFrame.
+    tolerance: 0,
+
+// Called when iFrame is closed via parentIFrame.close() method.
+    closedCallback: function () {
+    },
+
+// Initial setup callback function.
+    initCallback: function () {
+    },
+
+// Receive message posted from iFrame with the parentIFrame.sendMessage() method.
+    messageCallback: function () {
+    },
+
+// Function called after iFrame resized.
+    resizedCallback: function () {
+    },
+
+// Called before the page is repositioned after a request from the iFrame
+    scrollCallback: function () {
+      return true;
+    }
+
+  }
+  iFrameResize(options, '#iframe2');
+
+</script>
+</body>
+</html>
